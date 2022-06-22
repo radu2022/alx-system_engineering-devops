@@ -1,2 +1,2 @@
 #!/bin/bash
-dir_path=$(dirname $full_path)
+echo $0

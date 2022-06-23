@@ -1,8 +1,8 @@
-###ALX Software Engineering Programm
+		  ALX Software Engineering Programm
 
-##About Bash Scripts project
+		      About Bash Scripts project
 
-#alx-systems_engineering-devops
+		    alx-system_engineering-devops
 
 -----------------------------------------
 Contents

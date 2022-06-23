@@ -1,10 +1,10 @@
 		  ALX Software Engineering Programm
 
-		      About Bash Scripts project
+About Bash Scripts project
 
-		    alx-system_engineering-devops
+alx-system_engineering-devops
 
------------------------------------------
+______________________________________________________________________________
 Contents
 
 - 0x00. Shell, basics

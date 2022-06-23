@@ -1,4 +1,5 @@
-		  ALX Software Engineering Programm
+
+    		     ALX Software Engineering Program
 
 About Bash Scripts project
 

@@ -1,5 +1,7 @@
-READ ME!
- 
-ALX-System_Engineering Shell Basic Project
+ALX Software Engineering Programm
 
-0.Where am I?
+About Bash projects
+
+-------------------------------------------
+- 0x00. Shell, basics
+- 0x01. Shell, Permissions

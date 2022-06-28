@@ -1,6 +1,6 @@
 # 0x00. C - Hello, World
 
-# Introduction
+## Introduction
 - This Project illustrates how to compile C by using gcc.
 - And checking the codes with betty style by then exploring the official C coding styles.
 
@@ -14,7 +14,7 @@ _______________________________________________________________________________
        	     . The C file name will be saved in the variable $CFILE
 	     . The output should be saved in the file c
 
-1. **Compiler** <>br
+1. **Compiler** <br>
      - Write a script that compiles a C file but does not link.
        	     . The C file name will be saved in the variable $CFILE
 	     . The output file should be named the same as the C file, but with the extension .o instead of .c.
@@ -43,9 +43,9 @@ _______________________________________________________________________________
 	     . Your program should return 0
 	     . Your program should compile without warning when using the -Wall gcc option
 
-6. Size is not grandeur, and territory does not make a nation - Write a C program that prints the size of various types on the computer it is compiled and run on.
-     	     . You should produce the exact same output as in the example
-	     . Warnings are allowed
-	     . Your program should return 0
-	     . You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+6. **Size is not grandeur** <br>, and territory does not make a nation - Write a C program that prints the size of various types on the computer it is compiled and run on. 
+   . You should produce the exact same output as in the example
+   . Warnings are allowed
+   . Your program should return 0
+   . You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
 

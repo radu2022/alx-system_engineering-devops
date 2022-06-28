@@ -1,12 +1,44 @@
-
     		     ALX Software Engineering Program
 
-About Bash Scripts project
+# Introduction
+- Project which involves on Shell Basic, Bash and Devops.
+- 
 
-alx-system_engineering-devops
+## :ledger: Index
 
-______________________________________________________________________________
-Contents
+- [Commands](#package-0x00-shell_basics)
+- [Commands](#package-0x01-shell_permissions)
+- [Commands](#package-0x02-shell_redirections)
+- [Commands](#package-0x03-shell_variables_expansions)
+- [File Structure](#file_folder-file-structure)
 
-- 0x00. Shell, basics
-- 0x01. Shell, Permissions
+###  :package: 0x00-shell_basics
+- Project which involves on Shell basics.
+
+###  :package: 0x01-shell_permissions
+- Project which involves on Shell permissions.
+
+###  :package: 0x02-shell_redirections
+- Project which involves on Shell redirections.
+
+###  :package: 0x03-shell_variables_expansions
+- Project which involves on Shell variables and expansions.
+
+###  :file_folder: File Structure
+Add a file structure here with the basic details about files, below is an example.
+
+```
+.
+├── alx-system_engineering-devops
+│   ├── 0x00-shell_basics
+│   │   ├── 
+│   │   └── 
+│   ├── 0x01-shell_permissions
+│   │   ├──
+│   │   ├── 
+│   │   ├── 
+│   │   └── 
+│   └── 0x02-shell_redirections
+│       ├── 
+│       └──
+└── README.md

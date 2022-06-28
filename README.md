@@ -6,13 +6,13 @@
 
 ## :ledger: Index
 
-- [0x00-shell_basics](#bash-0x00-shell_basics)
+- [0x00-shell_basics](#redshell-0x00-shell_basics)
 - [0x01-shell_permissions](#shell-0x01-shell_permissions)
 - [0x02-shell_redirections](#shell-0x02-shell_redirections)
 - [0x03-shell_variables_expansions](#package-0x03-shell_variables_expansions)
 - [File Structure](#file_folder-file-structure)
 
-##  :bash: 0x00-shell_basics
+###  :redshell: 0x00-shell_basics
 - Project which involves on Shell basics.
 
 ###  :shell: 0x01-shell_permissions

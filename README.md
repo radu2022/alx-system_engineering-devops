@@ -12,13 +12,13 @@
 - [0x03-shell_variables_expansions](#package-0x03-shell_variables_expansions)
 - [File Structure](#file_folder-file-structure)
 
-###  :package: 0x00-shell_basics
+###  :bignner: 0x00-shell_basics
 - Project which involves on Shell basics.
 
-###  :package: 0x01-shell_permissions
+###  :shell: 0x01-shell_permissions
 - Project which involves on Shell permissions.
 
-###  :package: 0x02-shell_redirections
+###  :shell: 0x02-shell_redirections
 - Project which involves on Shell redirections.
 
 ###  :package: 0x03-shell_variables_expansions

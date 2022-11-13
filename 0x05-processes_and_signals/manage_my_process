@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-#Bash (init) script that manages manage_my_process
-while true
-do
-    sudo bash -c 'echo "I am alive!" >> /tmp/my_process'
+# Indefinitely writes "I am alive!" to a file
+
+NAME=/tmp/my_process
+sudo touch $NAME
+
+while true; do
+    sudo bash -c "echo \"I am alive!\" >> $NAME"
     sleep 2
 done

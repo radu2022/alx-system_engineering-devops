@@ -1,42 +1,17 @@
 #!/usr/bin/env bash
-# Installs HAProxy version 2.4 with the following configurations:
-
-apt-get install -y software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-2.4
+#configures a new Ubuntu machine nginx
 apt-get update
-apt-get install -y haproxy=2.4.\*
+apt-get install software-properties-common -y
+add-apt-repository ppa:vbernat/haproxy-1.7 -y
+apt-get update
+apt-get install haproxy=1.7.\* -y
+echo "frontend web-front
+        bind *:80
+        default_backend web-backend
 
-echo "ENABLED=1" >> /etc/default/haproxy
-mv /etc/haproxy/haproxy.cfg{,.original}
-touch /etc/haproxy/haproxy.cfg
-
-printf %s "global
-    log 127.0.0.1 local0 notice
-    maxconn 2000
-    user haproxy
-    group haproxy
-
-defaults
-    log     global
-    mode    http
-    option  httplog
-    option  dontlognull
-    retries 3
-    option redispatch
-    timeout connect  5000
-    timeout client  10000
-    timeout server  10000
-
-listen hbnb
-    bind 0.0.0.0:80
-    mode http
-    stats enable
-    stats uri /haproxy?stats
-    balance roundrobin
-    option httpclose
-    option forwardfor
-    server 20205-web-01 44.192.38.3 check
-    server 20205-web-02 3.239.82.120 check
-" >> /etc/haproxy/haproxy.cfg
-
-service haproxy start
+backend web-backend
+        balance roundrobin
+        server web1 34.207.188.81:80 check
+        server web2 54.145.156.219:80 check
+" | sudo tee -a /etc/haproxy/haproxy.cfg
+sudo service haproxy start

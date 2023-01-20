@@ -1,17 +1,27 @@
 #!/usr/bin/env bash
-#configures a new Ubuntu machine nginx
-apt-get update
-apt-get install software-properties-common -y
-add-apt-repository ppa:vbernat/haproxy-1.7 -y
-apt-get update
-apt-get install haproxy=1.7.\* -y
-echo "frontend web-front
-        bind *:80
-        default_backend web-backend
+#install and configure HAProxy load balancer at layer 4
 
-backend web-backend
-        balance roundrobin
-        server web1 34.207.188.81:80 check
-        server web2 54.145.156.219:80 check
-" | sudo tee -a /etc/haproxy/haproxy.cfg
-sudo service haproxy start
+apt-get -y update
+apt-get -y install --no-install-recommends software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.2
+apt-get -y install haproxy=2.2.\*
+
+echo "ENABLED=1" >> /etc/default/haproxy
+
+if [ ! -f '/etc/haproxy/haproxy.cfg.orig' ]
+    then
+      cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
+      else
+      cp /etc/haproxy/haproxy.cfg.orig /etc/haproxy/haproxy.cfg
+      fi
+
+echo -e "frontend load_balancer
+\tbind *:80
+\tdefault_backend webserver
+backend webserver
+\tbalance roundrobin
+\tserver web-01 34.207.188.81:80 check
+\tserver web-02 54.145.156.219:80 check
+" >> /etc/haproxy/haproxy.cfg
+
+service haproxy restart

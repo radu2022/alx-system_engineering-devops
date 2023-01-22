@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # connect to your server using the private key ~/.ssh/school
 # echo "SSH Public key" >> ~/.ssh/authorized_keys
-ssh -i ~/.ssh/school ubuntu@34.207.188.81
+ssh -i ~/.ssh/school ubuntu@18.235.234.1

@@ -4,7 +4,7 @@
 check_domain() {
 	# awk will use record seperator of space
 	# space sperated list of sub domains
-	SUBDOMAINS='www 88570-lb-01 88570-web-01 88570-web-02'
+	SUBDOMAINS='www 88570-lb-01 88570-web-01 web-02'
 
 	if [ -z "$1" ]; then
 		exit

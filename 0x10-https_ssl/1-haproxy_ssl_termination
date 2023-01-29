@@ -15,8 +15,8 @@ global
 	tune.ssl.default-dh-param 2048
 
 	# Default SSL material locations
-	ca-base /etc/haproxy/certs
-	crt-base /etc/ssl/private
+	ca-base /etc/letsencrypt/live/radu2022.tech/
+	crt-base /etc/letsencrypt/live/radu2022.tech/
 
 	# Default ciphers to use on SSL-enabled listening sockets.
 	# For more information, see ciphers(1SSL). This list is from:
@@ -56,7 +56,7 @@ frontend www-frontend
 	default_backend www-backend
 
 frontend www-https-frontend
-	bind *:443 ssl crt /etc/haproxy/certs/radu2022.tech.pem
+	bind *:443 ssl crt /etc/letsencrypt/live/radu2022.tech/fullchain.pem
 	reqadd X-Forwarded-Proto:\ https
 	default_backend www-backend
 

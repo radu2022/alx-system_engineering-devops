@@ -31,7 +31,7 @@ nice            = 0
 user            = mysql
 pid-file        = /var/run/mysqld/mysqld.pid
 socket          = /var/run/mysqld/mysqld.sock
-port            = 3306
+port            = 34101
 basedir         = /usr
 datadir         = /var/lib/mysql
 tmpdir          = /tmp
@@ -81,9 +81,9 @@ log_error = /var/log/mysql/error.log
 # note: if you are setting up a replication slave, see README.Debian about
 #       other settings you may need to change.
 #server-id              = 1
-#log_bin                        = /var/log/mysql/mysql-bin.log
+#log_bin                = /var/log/mysql/mysql-bin.log
 expire_logs_days        = 10
-max_binlog_size   = 100M
+max_binlog_size   	= 100M
 #binlog_do_db           = include_database_name
 #binlog_ignore_db       = include_database_name
 #
